@@ -12,5 +12,7 @@ Part numbers, prices and links are *to be filled in*. Items below are what is vi
 | 6 | 12 V 10 A DC power supply | per label | See [power](power.md) |
 | 7 | 60 mm PWM fans | 6 | Three per GPU |
 | 8 | Copper-fin heatsink | 2 | Replaces the stock P4 heatsink |
-| 9 | Fan speed controller with digital display | 1+ | Shows speed as a percentage |
+| 9 | XIAO microcontroller | 1 | Polls GPU temperature and sets fan speed (model to be filled in) |
+| 9b | Thermalright 12-port fan hub | 1 | Distributes the PWM signal to all fans |
+| 9c | Digital fan-speed readout | 1 | Shows speed as a percentage |
 | 10 | Shroud material, tape, adhesive, wire, connectors | n/a | See [cooling](cooling.md) |

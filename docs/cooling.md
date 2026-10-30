@@ -2,7 +2,25 @@
 
 The Tesla P4 is a passively cooled card designed for server airflow. Here its stock heatsink is replaced with a copper-fin heatsink ([photo 01](../hardware/photos/01-p4-bare-heatsink-removed.jpg)) and three 60 mm fans in a cut-out shroud ([photo 04](../hardware/photos/04-p4-three-fan-topdown.jpg)).
 
-A fan-speed controller with a digital readout shows speed as a percentage ([photo 11](../hardware/photos/11-single-p4-on-rack.jpg)).
+## Fan control
+
+The fans are driven automatically from GPU temperature:
+
+```
+EvE (nvidia-smi GPU temps) ──► XIAO microcontroller ──PWM──► Thermalright 12-port fan hub ──► 6x 60 mm fans
+```
+
+- A **XIAO** board polls `nvidia-smi` for the GPU temperatures and sets the fan speed.
+- The XIAO's PWM output goes to a **Thermalright 12-port fan hub** (the unit with the blue light bar, visible in [photo 13](../hardware/photos/13-rack-overview-angle.jpg)), which splits it out to all fans.
+- The small digital readout seen in the photos shows the fan speed as a percentage.
+
+*To be filled in:*
+
+- [ ] XIAO model, firmware and where its source lives
+- [ ] How the XIAO reads the temperatures (what on EvE it polls, and how often)
+- [ ] Fan curve (temperature to percent)
+- [ ] Hub model and how it is powered
+- [ ] What the fans do if the XIAO or EvE stops responding
 
 The GPU driver reports fan speed as N/A because the fans are external and not wired to the card. Fan speed is set on the controller.
 
