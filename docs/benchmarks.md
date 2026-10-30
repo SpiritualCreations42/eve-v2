@@ -31,7 +31,7 @@ After the load stopped and the models were unloaded, temperatures fell back to a
 Observations:
 
 - Neither card hit its 75 W limit. LLM token generation is memory-bound, so the P4s sat at about 60 to 65 W.
-- The 85 °C abort guard never triggered, and peak temperature stayed around 60 °C with the external fans.
+- The 85 °C abort guard never triggered, and peak temperature stayed around 60 °C with the external fans (three per GPU, plus three case fans).
 - The SM clock sat at a constant 1113 MHz (card maximum 1531 MHz). It stayed flat through the whole run while temperature was well below the limit, so it points to a power-state clock for this kind of load and not heat. Throttle reasons were not captured during the run, so this is not confirmed.
 - The fan controller's display reads 100 in the photos. The fan speed during the test was not recorded.
 

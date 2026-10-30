@@ -17,7 +17,7 @@ Low power, quiet-ish, cheap, and surprisingly capable for local inference, train
 | GPU link | M.2 (PCIe x4) → OCuLink adapter → PCIe x16 riser, one per GPU. Both cards negotiate PCIe 3.0 x4 |
 | GPU power | Pico-PSU-style ATX 24-pin power module per GPU, fed from a 12 V 10 A brick |
 | Software | Ubuntu 26.04.1 LTS, NVIDIA driver 580.178.04, CUDA 13.0, Docker with NVIDIA Container Toolkit |
-| Cooling | Stock P4 heatsink replaced with a copper-fin heatsink and 3x 60 mm fans in a cut-out shroud, with a fan-speed controller and digital readout |
+| Cooling | Stock P4 heatsink replaced with a copper-fin heatsink and 3x 60 mm fans in a cut-out shroud, plus three more fans on the modded ProDesk case, all on a Thermalright 12-port fan hub driven automatically from GPU temperature by a XIAO |
 
 Specs above were read from the running machine on 2026-10-30. Items still marked *to be filled in* in the docs are not yet measured.
 

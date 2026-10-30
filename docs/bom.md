@@ -10,9 +10,9 @@ Part numbers, prices and links are *to be filled in*. Items below are what is vi
 | 4 | OCuLink (PCIe x4) → PCIe x16 riser board | 2 | Board marked "OCULINK X4 / PCIe 4.0 X4 / TO GPU", with DIP switches for power-on and reset delay |
 | 5 | Pico-PSU-style 24-pin ATX power module | 2 | Mounts on the riser's 24-pin header; powers the riser and GPU |
 | 6 | 12 V 10 A DC power supply | per label | See [power](power.md) |
-| 7 | Thermalright 60 mm fans | 6 | Three per GPU (exact model to be filled in) |
+| 7 | Thermalright 60 mm fans | 9 | Three per GPU, plus three on the modded ProDesk case (exact model to be filled in) |
 | 8 | Copper-fin heatsink | 2 | Replaces the stock P4 heatsink |
-| 9 | XIAO microcontroller | 1 | Polls GPU temperature and sets fan speed (model to be filled in) |
+| 9 | XIAO microcontroller | 1 | Polls GPU temperature and sets fan speed |
 | 9b | Thermalright 12-port fan hub | 1 | Distributes the PWM signal to all fans |
 | 9c | Digital fan-speed readout | 1 | Shows speed as a percentage |
 | 10 | Shroud material, tape, adhesive, wire, connectors | n/a | See [cooling](cooling.md) |
