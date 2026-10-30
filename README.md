@@ -12,7 +12,7 @@ Low power, quiet-ish, cheap, and surprisingly capable for local inference, train
 
 | Part | Details |
 |------|---------|
-| Host | HP ProDesk 600 G5 Mini (USFF), Intel Core i7-9700T (8 cores, up to 4.3 GHz), 32 GB RAM (30 GiB usable), 2 TB PNY 2.5" SATA SSD boot drive plus an external NVMe drive on the USB-C port. Bought barebones on eBay, powered by a 90 W universal laptop brick |
+| Host | HP ProDesk 600 G5 Mini (USFF), Intel Core i7-9700T (8 cores, up to 4.3 GHz), 32 GB RAM (30 GiB usable), 2 TB PNY 2.5" SATA SSD boot drive plus an external 512 GB KingSpec NX NVMe drive in a fan-cooled ORICO 40 Gbps enclosure on the USB-C port. Bought barebones on eBay, powered by a 90 W universal laptop brick |
 | GPUs | 2x NVIDIA Tesla P4 (bought used on eBay), 8 GB GDDR5, 2560 CUDA cores, compute capability 6.1, ~75 W each |
 | GPU link | Both M.2 slots each carry an M.2 → OCuLink adapter feeding a JHH OCuLink PCIe 4.0 x4 dock, one dock per GPU. Both cards negotiate PCIe 3.0 x4 (the P4 is a PCIe 3.0 card) |
 | GPU power | One 120 W Pico PSU per dock, both fed from a single 12 V 300 W power supply |

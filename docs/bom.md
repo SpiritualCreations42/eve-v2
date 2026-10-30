@@ -12,7 +12,8 @@ Total build cost: about **$600**. Part numbers, prices and links are *to be fill
 | 6 | 12 V 300 W power supply | 1 | Feeds both Pico PSUs. See [power](power.md) |
 | 6b | 90 W universal laptop power brick | 1 | Powers the ProDesk |
 | 6c | PNY 2 TB 2.5" SATA SSD | 1 | Boot drive |
-| 6d | External NVMe drive, USB-C | 1 | Data drive (size to be filled in) |
+| 6d | KingSpec NX 512 GB NVMe SSD | 1 | External data drive |
+| 6e | ORICO 40 Gbps NVMe enclosure, with fan | 1 | Connects over USB-C. The link negotiated at 10 Gbps on the ProDesk when checked |
 | 7 | Thermalright 60 x 60 x 25 mm fans, black | 9 | Three per GPU, plus three on the modded ProDesk case. No RGB |
 | 8 | Copper-fin heatsink | 2 | Replaces the stock P4 heatsink |
 | 9 | XIAO microcontroller | 1 | Polls GPU temperature and sets fan speed |
