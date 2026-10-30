@@ -1,6 +1,6 @@
 # Bill of Materials
 
-Total build cost: about **$600**. Part numbers, prices and links are *to be filled in*.
+Total build cost: about **$600**, mostly used parts from eBay.
 
 | # | Item | Qty | Notes |
 |---|------|-----|-------|

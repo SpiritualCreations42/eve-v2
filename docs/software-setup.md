@@ -37,5 +37,3 @@ Everything is managed with Docker Compose.
 
 - The Tesla P4 has no artificial NVENC concurrent-session cap, unlike GeForce cards, so no encoder patch is needed for transcoding.
 - Pascal (compute capability 6.1) is supported by the current 580-series driver branch.
-
-*To be filled in:* compose files for the services above, and which GPU each service uses.

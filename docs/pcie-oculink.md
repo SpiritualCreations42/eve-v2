@@ -21,8 +21,3 @@ The PCI tree shows the two cards behind separate PCH root ports (00:1b.0 and 00:
 ## Dock settings
 
 The JHH docks have DIP switches / jumpers for CLKRUN# delay, PERST# delay and power mode (AUTO / ON). See [photo 08](../hardware/photos/08-pico-psu-closeup-oculink-switches.jpg).
-
-*To be filled in:*
-
-- [ ] Switch and jumper positions used
-- [ ] Power-on order: risers and GPUs before or with the host
