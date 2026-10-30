@@ -11,8 +11,8 @@ Total build cost: about **$600**. Part numbers, prices and links are *to be fill
 | 5 | 120 W Pico PSU (24-pin ATX) | 2 | One per dock. Mounts on the dock's 24-pin header and powers the dock and GPU |
 | 6 | 12 V 300 W power supply | 1 | Feeds both Pico PSUs. See [power](power.md) |
 | 6b | 90 W universal laptop power brick | 1 | Powers the ProDesk |
-| 6c | 2.5" SATA SSD, 512 GB | 1 | Boot drive |
-| 6d | External NVMe drive, 512 GB, USB-C | 1 | Data drive |
+| 6c | PNY 2 TB 2.5" SATA SSD | 1 | Boot drive |
+| 6d | External NVMe drive, USB-C | 1 | Data drive (size to be filled in) |
 | 7 | Thermalright 60 x 60 x 25 mm fans, black | 9 | Three per GPU, plus three on the modded ProDesk case. No RGB |
 | 8 | Copper-fin heatsink | 2 | Replaces the stock P4 heatsink |
 | 9 | XIAO microcontroller | 1 | Polls GPU temperature and sets fan speed |

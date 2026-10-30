@@ -1,6 +1,6 @@
 # Software Setup
 
-Read from the running system on 2026-10-30.
+Read from the running system on 2026-10-30. The machine was running from bench-test drives at the time, not its final boot and data drives, so OS-level details (versions, installed services) may differ once the final drives are back in.
 
 | Item | Value |
 |------|-------|

@@ -15,7 +15,8 @@
 ## Hardware docs to finish
 - [ ] Part numbers, prices and links for the BOM (total is about $600)
 - [ ] Wiring diagram for power-on sequence
-- [ ] Boot drive: confirm size and brand (system reports 512 GB)
+- [ ] Re-check OS, driver and service versions once the final boot and data drives are back in
+- [ ] External NVMe drive size and model
 - [ ] Shroud: dimensions, material, print/cut files if any
 - [ ] Photo captions reviewed
 
