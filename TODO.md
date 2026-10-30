@@ -7,7 +7,9 @@
 - [x] Negotiated link widths (done)
 - [ ] Which physical M.2 slot feeds which GPU
 - [x] Idle temperatures and power (done)
-- [ ] Load temperatures, fan speeds, power at the wall
+- [x] Load temperatures and GPU power under LLM load (done)
+- [ ] Fan speeds and power at the wall
+- [ ] Worst-case burn test (needs a tool approved for EvE)
 - [x] Docker / compose services running, GPU passthrough test
 - [ ] Benchmarks: LLM tokens/s, Whisper, transcoding
 

@@ -6,6 +6,8 @@ The Tesla P4 has a 75 W power limit (confirmed with `nvidia-smi`), powered throu
 
 Idle readings on 2026-10-30: GPU 0 about 6.4 W (P8), GPU 1 about 23.7 W (P0, light load).
 
+Under sustained LLM inference on both cards, peak GPU power was 61.6 W (GPU 0) and 64.9 W (GPU 1), below the 75 W limit. See [benchmarks](benchmarks.md).
+
 *To be filled in:*
 
 - [ ] PSU model and rating, how many GPUs per brick

@@ -8,6 +8,8 @@ The GPU driver reports fan speed as N/A because the fans are external and not wi
 
 Idle GPU temperatures on 2026-10-30: GPU 0 32 °C, GPU 1 38 °C.
 
+Under sustained LLM inference on both cards (about 2.5 minutes at 98–99% utilisation), peak temperatures were 61 °C (GPU 0) and 59 °C (GPU 1). See [benchmarks](benchmarks.md).
+
 *To be filled in:*
 
 - [ ] Fan model, CFM, noise
