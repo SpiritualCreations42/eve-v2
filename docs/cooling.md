@@ -31,6 +31,4 @@ Under sustained LLM inference on both cards (about 2.5 minutes at 98–99% utili
 
 *To be filled in:*
 
-- [ ] Controller model and wiring (manual vs automatic)
 - [ ] Shroud construction and dimensions
-- [ ] Idle and load GPU temperatures at each fan speed
