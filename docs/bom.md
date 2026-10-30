@@ -1,15 +1,18 @@
 # Bill of Materials
 
-Part numbers, prices and links are *to be filled in*. Items below are what is visible in the build photos.
+Total build cost: about **$600**. Part numbers, prices and links are *to be filled in*.
 
 | # | Item | Qty | Notes |
 |---|------|-----|-------|
-| 1 | HP ProDesk 600 G5 Mini | 1 | Host. Two M.2 2230/2280 slots used for the GPU links |
-| 2 | NVIDIA Tesla P4 8 GB | 2 | Used data-center pulls |
-| 3 | M.2 → OCuLink adapter | 2 | One per GPU |
-| 4 | OCuLink (PCIe x4) → PCIe x16 riser board | 2 | Board marked "OCULINK X4 / PCIe 4.0 X4 / TO GPU", with DIP switches for power-on and reset delay |
-| 5 | Pico-PSU-style 24-pin ATX power module | 2 | Mounts on the riser's 24-pin header; powers the riser and GPU |
-| 6 | 12 V 10 A DC power supply | per label | See [power](power.md) |
+| 1 | HP ProDesk 600 G5 Mini, barebones | 1 | Host, bought on eBay. Both M.2 2230/2280 slots used for the GPU links. Case modded to carry three fans |
+| 2 | NVIDIA Tesla P4 8 GB | 2 | Used data-center pulls, bought on eBay |
+| 3 | M.2 → OCuLink adapter | 2 | One per M.2 slot, one per GPU |
+| 4 | JHH OCuLink PCIe 4.0 x4 dock (OCuLink → PCIe x16) | 2 | One per GPU. Board marked "OCULINK X4 / PCIe 4.0 X4 / TO GPU", with DIP switches for power-on and reset delay |
+| 5 | 120 W Pico PSU (24-pin ATX) | 2 | One per dock. Mounts on the dock's 24-pin header and powers the dock and GPU |
+| 6 | 12 V 300 W power supply | 1 | Feeds both Pico PSUs. See [power](power.md) |
+| 6b | 90 W universal laptop power brick | 1 | Powers the ProDesk |
+| 6c | 2.5" SATA SSD, 512 GB | 1 | Boot drive |
+| 6d | External NVMe drive, 512 GB, USB-C | 1 | Data drive |
 | 7 | Thermalright 60 x 60 x 25 mm fans, black | 9 | Three per GPU, plus three on the modded ProDesk case. No RGB |
 | 8 | Copper-fin heatsink | 2 | Replaces the stock P4 heatsink |
 | 9 | XIAO microcontroller | 1 | Polls GPU temperature and sets fan speed |

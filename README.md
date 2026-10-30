@@ -12,14 +12,18 @@ Low power, quiet-ish, cheap, and surprisingly capable for local inference, train
 
 | Part | Details |
 |------|---------|
-| Host | HP ProDesk 600 G5 Mini (USFF), Intel Core i7-9700T (8 cores, up to 4.3 GHz), 32 GB RAM (30 GiB usable), 512 GB SATA SSD boot drive |
-| GPUs | 2x NVIDIA Tesla P4, 8 GB GDDR5, 2560 CUDA cores, compute capability 6.1, ~75 W each |
-| GPU link | M.2 (PCIe x4) → OCuLink adapter → PCIe x16 riser, one per GPU. Both cards negotiate PCIe 3.0 x4 |
-| GPU power | Pico-PSU-style ATX 24-pin power module per GPU, fed from a 12 V 10 A brick |
+| Host | HP ProDesk 600 G5 Mini (USFF), Intel Core i7-9700T (8 cores, up to 4.3 GHz), 32 GB RAM (30 GiB usable), 2.5" SATA SSD boot drive (512 GB) plus an external 512 GB NVMe drive on the USB-C port. Bought barebones on eBay, powered by a 90 W universal laptop brick |
+| GPUs | 2x NVIDIA Tesla P4 (bought used on eBay), 8 GB GDDR5, 2560 CUDA cores, compute capability 6.1, ~75 W each |
+| GPU link | Both M.2 slots each carry an M.2 → OCuLink adapter feeding a JHH OCuLink PCIe 4.0 x4 dock, one dock per GPU. Both cards negotiate PCIe 3.0 x4 (the P4 is a PCIe 3.0 card) |
+| GPU power | One 120 W Pico PSU per dock, both fed from a single 12 V 300 W power supply |
 | Software | Ubuntu 26.04.1 LTS, NVIDIA driver 580.178.04, CUDA 13.0, Docker with NVIDIA Container Toolkit |
 | Cooling | Stock P4 heatsink replaced with a copper-fin heatsink and 3x 60 mm fans in a cut-out shroud, plus three more fans on the modded ProDesk case, all on a Thermalright 12-port fan hub driven automatically from GPU temperature by a XIAO |
 
 Specs above were read from the running machine on 2026-10-30. Items still marked *to be filled in* in the docs are not yet measured.
+
+## Cost
+
+About **$600** for the whole build: the barebones ProDesk and both Tesla P4s were bought used on eBay, and the rest is adapters, docks, power supplies and fans.
 
 ## Why this build
 

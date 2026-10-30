@@ -5,7 +5,6 @@
 - [x] OS and kernel, NVIDIA driver and CUDA versions
 - [x] `nvidia-smi` full output, per-GPU PCIe link width and speed (`lspci -vv`)
 - [x] Negotiated link widths (done)
-- [ ] Which physical M.2 slot feeds which GPU
 - [x] Idle temperatures and power (done)
 - [x] Load temperatures and GPU power under LLM load (done)
 - [ ] Fan speeds and power at the wall
@@ -14,9 +13,9 @@
 - [ ] Benchmarks: LLM tokens/s, Whisper, transcoding
 
 ## Hardware docs to finish
-- [ ] Exact adapter, power module and fan part numbers (BOM prices and links)
-- [ ] Fan controller wiring and what it controls
+- [ ] Part numbers, prices and links for the BOM (total is about $600)
 - [ ] Wiring diagram for power-on sequence
+- [ ] Boot drive: confirm size and brand (system reports 512 GB)
 - [ ] Shroud: dimensions, material, print/cut files if any
 - [ ] Photo captions reviewed
 
