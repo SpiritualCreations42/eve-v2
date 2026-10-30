@@ -16,12 +16,12 @@ EvE (nvidia-smi GPU temps) ──► XIAO microcontroller ──PWM──► The
 ```
 
 - A **XIAO** board polls `nvidia-smi` for the GPU temperatures and sets the fan speed.
-- The XIAO's PWM output goes to a **Thermalright 12-port fan hub** (the unit with the blue light bar, visible in [photo 13](../hardware/photos/13-rack-overview-angle.jpg)), which splits it out to nine fans: three Thermalright 60 mm fans on each GPU, plus three more on the modded ProDesk case.
+- The XIAO's PWM output goes to a **Thermalright 12-port fan hub** (the unit with the blue light bar, visible in [photo 13](../hardware/photos/13-rack-overview-angle.jpg)), which splits it out to nine fans: three Thermalright 60 mm fans on each GPU, plus three more on the modded ProDesk case. The fans are black, 60 x 60 x 25 mm, with no RGB. The hub's IR remote and RGB features are not used.
 - The small digital readout seen in the photos shows the fan speed as a percentage.
 
 *To be filled in:*
 
-- [ ] Hub model and how it is powered
+- [ ] Hub model number and how it is powered
 
 The GPU driver reports fan speed as N/A because the fans are external and not wired to the card. Fan speed is set on the controller.
 
@@ -31,7 +31,7 @@ Under sustained LLM inference on both cards (about 2.5 minutes at 98–99% utili
 
 *To be filled in:*
 
-- [ ] Exact Thermalright 60 mm fan model, CFM, noise
+- [ ] Fan model number, CFM, noise
 - [ ] Controller model and wiring (manual vs automatic)
 - [ ] Shroud construction and dimensions
 - [ ] Idle and load GPU temperatures at each fan speed
