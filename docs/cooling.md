@@ -4,6 +4,10 @@ The Tesla P4 is a passively cooled card designed for server airflow. Here its st
 
 A fan-speed controller with a digital readout shows speed as a percentage ([photo 11](../hardware/photos/11-single-p4-on-rack.jpg)).
 
+The GPU driver reports fan speed as N/A because the fans are external and not wired to the card. Fan speed is set on the controller.
+
+Idle GPU temperatures on 2026-10-30: GPU 0 32 °C, GPU 1 38 °C.
+
 *To be filled in:*
 
 - [ ] Fan model, CFM, noise

@@ -1,12 +1,14 @@
 # TODO (delete before publishing)
 
 ## Pull from the live machine once it is powered back up
-- [ ] CPU, RAM, storage, BIOS version (`lscpu`, `free -h`, `lsblk`, `dmidecode`)
-- [ ] OS and kernel, NVIDIA driver and CUDA versions
-- [ ] `nvidia-smi` full output, per-GPU PCIe link width and speed (`lspci -vv`)
-- [ ] Which M.2 slot feeds which GPU, and negotiated link widths
-- [ ] Idle and load temperatures, fan speeds, power draw
-- [ ] Docker / compose services running, GPU passthrough test
+- [x] CPU, RAM, storage, BIOS version (`lscpu`, `free -h`, `lsblk`, `dmidecode`)
+- [x] OS and kernel, NVIDIA driver and CUDA versions
+- [x] `nvidia-smi` full output, per-GPU PCIe link width and speed (`lspci -vv`)
+- [x] Negotiated link widths (done)
+- [ ] Which physical M.2 slot feeds which GPU
+- [x] Idle temperatures and power (done)
+- [ ] Load temperatures, fan speeds, power at the wall
+- [x] Docker / compose services running, GPU passthrough test
 - [ ] Benchmarks: LLM tokens/s, Whisper, transcoding
 
 ## Hardware docs to finish

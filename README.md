@@ -12,13 +12,14 @@ Low power, quiet-ish, cheap, and surprisingly capable for local inference, train
 
 | Part | Details |
 |------|---------|
-| Host | HP ProDesk 600 G5 Mini (USFF) |
+| Host | HP ProDesk 600 G5 Mini (USFF), Intel Core i7-9700T (8 cores, up to 4.3 GHz), 32 GB RAM (30 GiB usable), 512 GB SATA SSD boot drive |
 | GPUs | 2x NVIDIA Tesla P4, 8 GB GDDR5, 2560 CUDA cores, compute capability 6.1, ~75 W each |
-| GPU link | M.2 (PCIe x4) → OCuLink adapter → PCIe x16 riser, one per GPU |
+| GPU link | M.2 (PCIe x4) → OCuLink adapter → PCIe x16 riser, one per GPU. Both cards negotiate PCIe 3.0 x4 |
 | GPU power | Pico-PSU-style ATX 24-pin power module per GPU, fed from a 12 V 10 A brick |
+| Software | Ubuntu 26.04.1 LTS, NVIDIA driver 580.178.04, CUDA 13.0, Docker with NVIDIA Container Toolkit |
 | Cooling | Stock P4 heatsink replaced with a copper-fin heatsink and 3x 60 mm fans in a cut-out shroud, with a fan-speed controller and digital readout |
 
-Items marked *to be verified* in the docs are filled in from the live machine, not from memory.
+Specs above were read from the running machine on 2026-10-30. Items still marked *to be filled in* in the docs are not yet measured.
 
 ## Why this build
 
