@@ -21,7 +21,7 @@ EvE (nvidia-smi GPU temps) ──► XIAO microcontroller ──PWM──► The
 
 *To be filled in:*
 
-- [ ] Hub model number and how it is powered
+- [ ] How the hub is powered
 
 The GPU driver reports fan speed as N/A because the fans are external and not wired to the card. Fan speed is set on the controller.
 
@@ -31,7 +31,6 @@ Under sustained LLM inference on both cards (about 2.5 minutes at 98–99% utili
 
 *To be filled in:*
 
-- [ ] Fan model number, CFM, noise
 - [ ] Controller model and wiring (manual vs automatic)
 - [ ] Shroud construction and dimensions
 - [ ] Idle and load GPU temperatures at each fan speed
