@@ -8,7 +8,7 @@
 
 **Two Tesla P4 data-center GPUs on a mini PC, for about $600.**
 
-An **HP ProDesk 600 G5 Mini** has no PCIe slot, but it has two M.2 slots. Each one becomes an external PCIe x4 link through an **OCuLink** adapter and dock, carrying one used **NVIDIA Tesla P4** (8 GB). A hub-driven set of nine fans keeps everything cool. The result is a quiet, low-power box for local LLM inference, speech-to-text, transcoding and training experiments.
+An **HP ProDesk 600 G5 Mini** has no PCIe slot, but it has two M.2 slots. Each one becomes an external PCIe x4 link through an **OCuLink** adapter and dock, carrying one used **NVIDIA Tesla P4** (8 GB). A hub-driven set of nine fans keeps everything cool. The result is a compact, low-power box for local LLM inference, speech-to-text, transcoding and training experiments.
 
 ![EvE v2 on the rack](hardware/photos/13-rack-overview-angle.jpg)
 
