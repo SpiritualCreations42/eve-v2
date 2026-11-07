@@ -41,6 +41,7 @@ Per-second logs for drops 4 and 5 (75 s before the fault to 3 s after) are in [`
 | Fan hub sharing a Pico PSU | The fan hub originally drew from a Pico PSU, which shut itself off under combined load. It now runs from its own 12 V / 5 V supply (a buck-converter board with INA228 metering), and the Pico PSU no longer shuts off. GPU 0 still dropped three times afterwards (drops 3 to 5). |
 | GPU 1 to GPU 0 weight streaming (DisTorch2 donor) | Drop 5 used system RAM as the donor and GPU 1 stayed idle. It still dropped. |
 | Compute, PCIe copies, GPU to GPU, or load steps in general | A standalone PyTorch test (below) passed every phase on both GPUs. |
+| **Cables, docks, redrivers** | **Not the cables.** New docks, new cables and new OCuLink with redrivers are fitted, and they have already been swapped between ports. Do not suggest swapping them again. |
 | Temperature | 52–54 °C at every drop. |
 | ASPM power saving | `lspci -vv` shows ASPM disabled on both root ports and on GPU 1 (GPU 0 was down when checked). |
 | BAR / resource allocation at boot | No "can't assign" or "failed to assign" messages in `dmesg`. BAR1 is 256 MB and BAR3 32 MB on GPU 1 (GPU 0 was down when checked), and the root-port windows cover them. Kernel command line includes `pci=realloc`. |
@@ -66,7 +67,7 @@ So the same hardware ran 41 minutes of synthetic load cleanly and then dropped w
 ### Open leads
 
 1. **The workload itself.** DisTorch2 offload streams model weights between host (or the donor GPU) and GPU 0 on every sampling step, on top of continuous compute. The standalone `pcie` and `mixed` phases used pinned 256 MB copies instead. A closer reproduction of ComfyUI's copy sizes and cadence would show whether the traffic pattern, not the load level, is what matters.
-2. **Link margin on the GPU 0 path.** All five drops are on one root port, one adapter, one OCuLink cable and one dock, and always begin with a physical-layer error. The test that separates "the card" from "the path" is to **swap the two OCuLink cables and docks**: if the fault follows the cable or dock, it is hardware on that path; if it stays with GPU 0's card, it is the card or its slot.
+2. **The rest of the GPU 0 path.** All five drops are on one root port and always begin with a physical-layer error. The docks, OCuLink cables and redrivers are new and have already been swapped between ports, so they are ruled out. What remains on that path is the M.2 adapters, the M.2 slots and root port, and the BIOS settings below.
 3. **Dock supply droop.** Log each dock's 12 V rail with an INA228 (under-voltage alert) across a run. Rules the dock supply in or out during the fast load swings.
 4. **Different vBIOS versions.** The two cards report different vBIOS versions (GPU 0 `86.04.55.00.01`, GPU 1 `86.04.8C.00.10`) with the same InfoROM and PCI IDs, and the older-numbered one is the card that drops. Not a conclusion, only a difference worth keeping in mind. Do not cross-flash without checking the exact board part number first.
 5. **BIOS settings.** Windows 11 reported a code 12 (insufficient resources) error on this machine on 2026-10-31. HP's hidden Above-4G Decoding and Resizable BAR options are untested.
