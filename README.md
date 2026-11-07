@@ -66,6 +66,7 @@ All photos with captions: [hardware/photos](hardware/photos/README.md).
 | OS, driver, CUDA, Docker, services | [Software setup](docs/software-setup.md) |
 | LLM inference results, temperatures, power | [Benchmarks](docs/benchmarks.md) |
 | How it was assembled | [Build log](docs/build-log.md) |
+| GPU 0 dropping off the PCIe bus: evidence, ruled-out causes, open leads | [Troubleshooting](docs/troubleshooting.md) |
 | What is planned next | [Roadmap](ROADMAP.md) |
 
 ## Why this build

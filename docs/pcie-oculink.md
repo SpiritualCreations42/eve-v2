@@ -18,6 +18,10 @@ Both cards link at x4, which is the most the M.2 slots can offer. The docks are 
 
 The PCI tree shows the two cards behind separate PCH root ports (00:1b.0 and 00:1b.4), so each has its own link.
 
+## Known issue
+
+GPU 0 (behind root port 00:1b.0) has fallen off the bus under ComfyUI Flux load several times. The signature, what was ruled out and the open leads are in [Troubleshooting](troubleshooting.md).
+
 ## Dock settings
 
 The JHH docks have DIP switches / jumpers for CLKRUN# delay, PERST# delay and power mode (AUTO / ON). See [photo 08](../hardware/photos/08-pico-psu-closeup-oculink-switches.jpg).

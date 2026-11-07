@@ -1,0 +1,13 @@
+services:
+  gpu-load:
+    # one-off GPU load test, no ComfyUI: reuses the ComfyUI image's torch (cu126) read-only
+    image: mmartial/comfyui-nvidia-docker:ubuntu24_cuda12.6.3-latest
+    runtime: nvidia
+    user: "1000:1000"
+    entrypoint: ["/comfy/mnt/venv/bin/python", "-u", "/work/gpu_load.py"]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - ./gpu_load.py:/work/gpu_load.py:ro
+      - ${HOME}/comfyui/mnt:/comfy/mnt:ro
